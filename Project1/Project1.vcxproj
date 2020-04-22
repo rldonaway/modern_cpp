@@ -144,6 +144,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="assignment1.cpp" />
+    <ClCompile Include="memory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="assignment1.h" />

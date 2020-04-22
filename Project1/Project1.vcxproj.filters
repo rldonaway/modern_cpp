@@ -27,6 +27,9 @@
     <ClCompile Include="assignment2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
