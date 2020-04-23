@@ -41,3 +41,24 @@ void Strings() {
 	strcpy_s(p, 4, "C++"); // need to allocate an extra byte for termination
 	delete[] p;
 }
+
+void TwoDArrays() {
+	// stack
+	int data[2][3] = {
+		1,2,3,
+		4,5,6
+	}; // represented as a 1-D array
+
+	int* p1 = new int[3]; // 1 row
+	int* p2 = new int[3]; // 1 row
+	int** pData = new int* [2]; // points to both rows
+	pData[0] = p1; // assigning row 1
+	pData[1] = p2; // assigning row 2
+
+	pData[0][1] = 2; // will return the second element of the first row
+
+	delete[] p1;
+	// delete pData[0]; // is equivalent
+	delete[] p2;
+	delete[] pData;
+}

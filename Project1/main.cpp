@@ -119,6 +119,7 @@ void Assignment3()
 	// int*& p_ref1 = ptr1; // this won't work because p_ref1 is not constant and ptr1 is so doing this would allow value1 to be modified
 	// const int*& p_ref2 = ptr2; // this won't work because ptr2 has constant contents and only the reference p_ref2 is constant
 
+	// a const object cannot have its *contents* changed
 }
 
 void Pointers() {
@@ -238,6 +239,26 @@ void BasicIO()
 	cout << "Your name is: " << buff;
 	cin.getline(buff, 64);
 	cout << buff << endl;
+}
+
+void CopyConstructors() {
+	// Integer i(5); // this is an implementation of an integer wrapper, calling the constructor that takes an int
+	// Integer i2(i); // this is the copy constructor, implemented automatically
+
+	int* p1 = new int(5);
+	int* p2 = p1; // creates a copy of the memory address of the int 5 (shallow copy)
+	// here's a deep copy:
+	int* p3 = new int(*p1);
+
+	/*
+	Integer::Integer(const Integer &obj) { // have to pass by reference to avoid an infinite loop of copies
+		m_pInt = new int(*obj.m_pInt);
+	}
+	*/
+
+	// Rule of 3 (reasons to create a copy constructor)
+	// Implement _all_ of * destructor * copy constructor * copy assignment operator
+	// not doing this can lead to memory leaks or a shallow copy
 }
 
 // namespaces -- scope types

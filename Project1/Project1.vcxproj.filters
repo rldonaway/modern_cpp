@@ -30,6 +30,12 @@
     <ClCompile Include="memory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object_orientation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -42,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="assignment2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
